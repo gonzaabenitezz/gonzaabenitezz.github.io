@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=M+PLUS+Rounded+1c&family=Nosifer&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #030303;
+    color: #fff;
+}
+
+.container {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(https://www.themoviedb.org/t/p/original/jOJP93WpQrmSXX16lQCNulwuUVO.jpg); /*img/fondo-loki.jpg*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 35px;
+    color: #fff;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ff2f28;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.header-1 img {
+    width: 300px;
+}
+
+.header-1 a {
+    transition: color 0.2s;
+}
+
+.header-1 a:hover {
+    color: #a0a0a0;
+}
+
+.header-2 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-2 h1 {
+    color: #7a7a7ad8;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header-2 img {
+    width: 70px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: #ff2f28;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-2 {
+    width: 110px;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: #ff2f28;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.series {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #ff2f28;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.box-container-1,
+.box-container-2,
+.box-container-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+    display: inline-block;
+}
+
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4) {
+    display: inline-block;
+}
+
+.load-more {
+    margin-top: 40px;
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid #ff2f28;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.load-more:hover {
+    background-color: #ff2f28;
+    color: #fff;
+}
+
+.content img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Agranda solamente la imagen como efecto de zoom */
+}
+
+.content img:hover {
+    transform: scale(1.02);    /* Agranda solamente la imagen como efecto de zoom */
+}
+
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.content {
+    color: #cfcfcf;
+    font-size: 20px;
+    transition: all .4s;
+}
+
+.content :hover {
+    color: #ff2f28;
+}
+
+/* estaba aca,  tratando de poner un hover a las img para que cambie el color de su nombre al pasar por ensima del la img  */
+
+
+/*--------------------------------------- registrar cuenta e iniciar sesion --------------------------------------*/
+
+.header-inicio-y-registro {
+    background-color: #000000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+ .seccion-inicio-y-registro {
+    background-image: url(/img/otros/series-fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-inicio-y-registro{
+    margin: 50px 0;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.form-container h1 {
+    padding: 20px;
+}
+
+.container-inicio-y-registro span{
+    font-size: 12px;
+}
+
+.container-inicio-y-registro a{
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container-inicio-y-registro a:hover {
+    color: #ff0000ad;
+}
+
+.container-inicio-y-registro button{
+    background-color: #ff000067;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container-inicio-y-registro button:hover {
+    background-color: #ff0000;
+}
+
+
+.container-inicio-y-registro {
+    background-color: rgba(0, 0, 0, 0.795);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+
+
+.container-inicio-y-registro input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 80%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+/*------------------------------------------ contacto ------------------------------------------*/
+
+.pantalla-contacto-ayuda {
+    background: linear-gradient(to bottom , rgb(128, 61, 61), rgb(146, 117, 63));
+}
+
+.cuadro-general {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cuadro-ayuda ul {
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.cuadro-ayuda ul li {
+    margin-bottom: 10px;
+}
+
+
+.cuadro-contacto .form-contacto {
+    display: grid;
+    grid-template-columns: 250px ;
+    text-align: center;
+}
+
+.form-contacto input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 80%;
+    outline: none;
+}
+
+.form-contacto .mensaje {
+    padding-bottom: 100px;
+}
+
+.form-contacto button {
+    background-color: #ff4c4c;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-contacto button:hover {
+    background-color: #ff0000;
+}
+
+
+/*------------------------- trailers de series -------------------------*/
+
+.container-serie {
+    padding: 50px;  
+    background: radial-gradient(rgb(85, 81, 81), rgb(5, 5, 5)) ;
+}
+
+.container-video-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    color: #cfcfcf;
+    
+}
+
+.container-video-info .info{ 
+    margin-left: 15px;
+}
+
+.container-video-info .info h3,h4 {
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.container-video-info .info span {
+    color: #2ccf0b;
+}
+
+.container-serie .container-video-info .video {
+    width: 560px;
+    height: 315px;
+}
+
+.container-serie .container-video-info .video iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 8px;
+}
+
+.container-serie .reparto {
+    border-top: 1px solid #fff;
+    margin-top: 50px;
+    color: #cfcfcf;
+}
+
+.container-serie .reparto h2 {
+    padding: 10px 0 0 30px;
+}
+
+.reparto .container-perfiles {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 20px;
+    text-align: center;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor img {
+    width: 150px;
+    height: 200px;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor {
+    transition: transform 0.4s;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor:hover{
+    color: #ce2424;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+/*---------------------------- footer ----------------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 30px;
+    border-top: 1px solid #ff2f283d;
+    border-bottom: 1px solid #f8eded00;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: block;
+    border-radius: 20%;
+    transition: all 0.3;
+}
+
+.footer a img:hover {
+    background-color: #ff0800;
+}
+
+.marca p {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.marca span {  
+    opacity: .4;
+}
+
+/*-------------------------------------------------------- responsive --------------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    /*index*/
+    .menu {
+        padding: 20px;
+    }
+
+    .container {
+        min-width: auto;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #030303;
+        display: none;
+        z-index: 2;
+    }
+
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+        
+    }
+
+    .header-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .series {
+        padding: 30px ;
+        flex-direction: column;
+    }
+
+    /*footer*/
+
+    .footer {
+        margin-top: 0px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+
+
+
+    /*registrar_cuenta  iniciar_sesion*/
+
+    .seccion-inicio-y-registro {
+        background-image: none;
+        background-color: #bebebe;
+    }
+
+    .container-inicio-y-registro{
+        max-width: 90%;
+    }
+
+    .form-container h1 {
+        font-size: 34px;
+    }
+
+    .form-container span {
+        font-size: 16px;
+    }
+
+
+
+
+    /*contacto*/
+
+    .cuadro-general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadro-general .cuadro-ayuda h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .cuadro-general .cuadro-ayuda p {
+        font-size: 22px;
+    }
+
+    .cuadro-general .cuadro-ayuda ul li {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+    /*trailers de series*/
+
+.container-serie {
+    padding: 10px;  
+    background: #615959 ;
+}
+
+.container-video-info {
+    grid-template-columns: 100%;
+}
+
+.container-video-info .info h3,h4 {
+    font-size: 24px;
+}
+
+.container-video-info .info p {
+    font-size: 20px;
+}
+
+.container-serie .container-video-info .video {
+    width: 100%;
+    height: 315px;
+}
+
+.container-serie .container-video-info .video iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.container-serie .reparto {
+    border-top: 3px solid #fff;
+}
+
+.container-serie .reparto h2 {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.reparto .container-perfiles {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor img {
+    width: 280px;
+    height: 350px;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 5px;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor {
+    transition: none;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor h3 {
+    font-size: 30px;
+}
+
+.reparto .container-perfiles .perfil-actriz-actor:hover{
+    color: #bebebe;
+    transform: none;
+}
+
+
+}
+
+
+
+
+
+
+

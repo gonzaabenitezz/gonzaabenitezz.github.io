@@ -1,0 +1,68 @@
+img {
+    max-height: 400px;   
+}
+
+.noticias_medianas {
+    text-align: left;
+    line-height: 2em;
+}
+
+.col-12 img {
+    max-height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+.pie_pagina {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 20px;
+    border-top: 1px solid #ff2f283d;
+    border-bottom: 1px solid #f8eded00;
+}
+
+.pie_pagina ul {
+    display: flex;
+    list-style: none;
+}
+
+.pie_pagina h3 {
+    font-size: 30px;
+}
+
+.pie_pagina a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: block;
+    border-radius: 20%;
+    transition: all 0.3;
+}
+
+.pie_pagina a img:hover {
+    background-color: #ff0800;
+}
+
+.marca_pie_pagina {
+    background-color: black;
+}
+
+.marca_pie_pagina p {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.marca_pie_pagina span {  
+    opacity: .4;
+}
